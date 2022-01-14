@@ -1,0 +1,32 @@
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+
+    <aside>
+        <img src="{% static 'main/img/pizza.png' %}" alt="pizza">
+        <span class="pizza">pizza</span>
+        <h3>navigation</h3>
+        <ul>
+            <a href=""><li>main</li></a>
+            <a href=""><li>about</li></a>
+            <a href=""><li>contacts</li></a>
+        </ul>
+    </aside>
+
+    <main>
+        {% block body %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>
