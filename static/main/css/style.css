@@ -1,0 +1,85 @@
+
+body {
+  background: #2c2c2c;
+}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 25%;
+    padding: 2.5%;
+    height: 100vh;
+    color: orange;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+    float: left;
+    width: 80px;
+}
+
+aside .pizzaLogo {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: -5px
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size:28px;
+}
+
+aside ul {list-style: none}
+aside ul li {
+    color: orange;
+    display: block;
+    margin-top: 20px;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+aside ul a {
+    text-decoration: none;
+}
+
+.fa, .far, .fas {
+    margin-right: 10px;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+main .features {
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%
+}
+
+main .features h1 {font-size: 50px;}
+
+main .features p {
+    max-width: 500px; margin: 21px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
