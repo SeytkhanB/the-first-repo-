@@ -1,0 +1,24 @@
+
+{% extends 'main/layout.html' %}
+
+{% block title %}News{% endblock %}
+
+{% block body %}
+    <div class="features">
+        <h1>News page</h1>
+
+        {% if news %}
+            {% for value in news %}
+                <div class="alert alert-warning">
+                    <h3>{{value.title}}</h3>
+                    <p>{{value.anons}}</p>
+                    <p>{{value.full_text}}</p>
+                    <p>{{value.date}}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>You don't have any news yet</p>
+        {% endif %}
+    {# you will write comments in django like this #}
+    </div>
+{% endblock %}

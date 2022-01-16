@@ -1,15 +1,21 @@
 
 {% extends 'main/layout.html' %}
 
-{% block title %}the main page{% endblock %}
+{% block title %}Main{% endblock %}
 
 {% block body %}
     <div class="features">
-        <h1>the main page</h1>
+        <h1>Main page</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Ad debitis delectus eveniet hic iusto.
             Ab debitis est exercitationem illum magnam, voluptatum.
         </p>
-        <butto class="btn btn-primary">to page</butto>
+        <div class="button"><button class="btn btn-primary">to page</button></div>
+
+        {% for value in values %}
+            {% filter upper %}          <!-- we can use filter anywhere -->
+                <p>{{ value }}</p>      <!-- another way to use filter. you need only this → {{ value|upper }} -->
+            {% endfilter %}
+        {% endfor %}
     </div>
 {% endblock %}
