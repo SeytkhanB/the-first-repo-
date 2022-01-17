@@ -13,3 +13,6 @@ class Articles(models.Model):
             f'Anons: {self.anons}'\
             f'Full text: {self.full_text}'\
             f'Date: {self.date}'
+
+    def get_absolute_url(self):
+        return f'/news/{self.id}'

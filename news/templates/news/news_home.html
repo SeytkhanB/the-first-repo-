@@ -14,6 +14,8 @@
                     <p>{{value.anons}}</p>
                     <p>{{value.full_text}}</p>
                     <p>{{value.date}}</p>
+
+                    <a href="{% url 'news-detail' value.id %}" class="btn btn-warning">Detail..</a>
                 </div>
             {% endfor %}
         {% else %}
